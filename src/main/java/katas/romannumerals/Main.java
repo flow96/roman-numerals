@@ -27,8 +27,13 @@ public class Main {
                         "\n >> Roman: '" + converter.convertToRoman(number) + "'" +
                         "\n----------------------\n");
 
-            }catch (Exception e){
-                System.out.println(" >> '" + line + "' is not an arabic number, or it's too large!");
+            }catch (NumberFormatException e){
+                if(e.getMessage().equals("Number can not be negative"))
+                    System.err.println(" >> Negative numbers are not supported");
+                else if(e.getMessage().equals("Number too large"))
+                    System.err.println(" >> '" + line + "' is too large, sorry");
+                else
+                    System.err.println(" >> '" + line + "' is not an arabic number");
             }
             System.out.print(" >> Enter a number: ");
         }

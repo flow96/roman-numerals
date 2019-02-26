@@ -27,10 +27,11 @@ public class Converter {
      * @return
      */
     private String convertToRoman(String currentRomanString, int remaining){
-        if(remaining < 0){
-            System.err.println(" >> Numbers below 0 can not be converted...");
-            return "";
-        }
+        if(remaining < 0)
+            throw new NumberFormatException("Number can not be negative");
+
+        if(remaining >= 1000000)
+            throw new NumberFormatException("Number too large");
 
         if(remaining == 0)  // Exit condition (done)
             return currentRomanString;
