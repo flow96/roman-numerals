@@ -2,8 +2,8 @@ Coding Kata - Roman Numerals - Java - Solution
 ===
 
 ### Solution
-The ``Converter.java`` class can be used to convert arabic (integer) values into roman numerals.
-The ``Main.java`` is the main entry point of the application. It reads your input and converts the number to roman numerals.
+The ``Converter.java`` class can be used to convert arabic (integer) values into roman numerals.  
+The ``Main.java`` is the main entry point of the application. It reads your input and converts the number to roman numerals.  
 The ``RomanNumbers.java`` contains an Enum of the common roman numerals and their corresponding arabic value, used for convertion.
 
 
