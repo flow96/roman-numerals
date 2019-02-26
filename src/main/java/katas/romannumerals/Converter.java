@@ -4,6 +4,8 @@ package katas.romannumerals;
  * A converter class to convert arabic numerals to roman numerals
  * The converter can be accessed by the public method, but uses internally a private recursive method
  *
+ * @author Florian Lutze
+ * @version 1.0
  */
 public class Converter {
 
@@ -25,6 +27,11 @@ public class Converter {
      * @return
      */
     private String convertToRoman(String currentRomanString, int remaining){
+        if(remaining < 0){
+            System.err.println(" >> Numbers below 0 can not be converted...");
+            return "";
+        }
+
         if(remaining == 0)  // Exit condition (done)
             return currentRomanString;
 
