@@ -23,4 +23,4 @@ By cloning this repository using git
 ```
 git clone https://github.com/flow96/roman-numerals
 ```
-...or downloading it in as a zip file
+...or downloading it as a zip file
